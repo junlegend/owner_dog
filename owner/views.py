@@ -6,7 +6,6 @@ from owner.models import Owner, Dog
 
 
 class OwnerView(View):
-    #:8000/owners
     def get(self, request):
         owners = Owner.objects.all()
         result = []
@@ -22,8 +21,6 @@ class OwnerView(View):
 
 
 class DogView(View):
-    # :8000/dogs
-    # :8000/owners/dogs
     def get(self, request):
         dogs = Dog.objects.all()
         result = []
